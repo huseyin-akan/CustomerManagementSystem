@@ -27,6 +27,7 @@ namespace CustomerManagementSystem.Controllers
         [HttpGet]
         public IActionResult GetPortalCustomerByCustomerId(int customerId)
         {
+            //bakalım günceleyecek mi
             var portalCustomer = portalCustomerService.getPortalCustomerByCustomerId(customerId);
             return View(portalCustomer);
         }
